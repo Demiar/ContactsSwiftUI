@@ -11,6 +11,12 @@
 		8A6503CD26C3069100059F9B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6503CC26C3069100059F9B /* ContentView.swift */; };
 		8A6503CF26C3069900059F9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A6503CE26C3069900059F9B /* Assets.xcassets */; };
 		8A6503D226C3069900059F9B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A6503D126C3069900059F9B /* Preview Assets.xcassets */; };
+		8A6503DA26C306CC00059F9B /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6503D926C306CC00059F9B /* Person.swift */; };
+		8A6503DC26C3078E00059F9B /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6503DB26C3078E00059F9B /* DataManager.swift */; };
+		8A6503DE26C3083200059F9B /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6503DD26C3083200059F9B /* Contacts.swift */; };
+		8A6503E026C3083D00059F9B /* Numbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6503DF26C3083D00059F9B /* Numbers.swift */; };
+		8A6503E226C3AFC100059F9B /* DetailContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6503E126C3AFC100059F9B /* DetailContact.swift */; };
+		8A6503E826C40F2200059F9B /* PhoneMailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6503E726C40F2200059F9B /* PhoneMailCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +26,12 @@
 		8A6503CE26C3069900059F9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A6503D126C3069900059F9B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8A6503D326C3069900059F9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A6503D926C306CC00059F9B /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		8A6503DB26C3078E00059F9B /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		8A6503DD26C3083200059F9B /* Contacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
+		8A6503DF26C3083D00059F9B /* Numbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Numbers.swift; sourceTree = "<group>"; };
+		8A6503E126C3AFC100059F9B /* DetailContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailContact.swift; sourceTree = "<group>"; };
+		8A6503E726C40F2200059F9B /* PhoneMailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneMailCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +64,10 @@
 		8A6503C926C3069100059F9B /* ContactsSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				8A6503CA26C3069100059F9B /* ContactsSwiftUIApp.swift */,
-				8A6503CC26C3069100059F9B /* ContentView.swift */,
-				8A6503CE26C3069900059F9B /* Assets.xcassets */,
-				8A6503D326C3069900059F9B /* Info.plist */,
-				8A6503D026C3069900059F9B /* Preview Content */,
+				8A6503E626C3C7A600059F9B /* Service */,
+				8A6503E526C3C79B00059F9B /* Model */,
+				8A6503E426C3C76300059F9B /* SupportFiles */,
+				8A6503E326C3C75000059F9B /* View */,
 			);
 			path = ContactsSwiftUI;
 			sourceTree = "<group>";
@@ -67,6 +78,45 @@
 				8A6503D126C3069900059F9B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8A6503E326C3C75000059F9B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8A6503CC26C3069100059F9B /* ContentView.swift */,
+				8A6503DD26C3083200059F9B /* Contacts.swift */,
+				8A6503E126C3AFC100059F9B /* DetailContact.swift */,
+				8A6503DF26C3083D00059F9B /* Numbers.swift */,
+				8A6503E726C40F2200059F9B /* PhoneMailCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8A6503E426C3C76300059F9B /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				8A6503CA26C3069100059F9B /* ContactsSwiftUIApp.swift */,
+				8A6503CE26C3069900059F9B /* Assets.xcassets */,
+				8A6503D326C3069900059F9B /* Info.plist */,
+				8A6503D026C3069900059F9B /* Preview Content */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		8A6503E526C3C79B00059F9B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8A6503D926C306CC00059F9B /* Person.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8A6503E626C3C7A600059F9B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				8A6503DB26C3078E00059F9B /* DataManager.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +188,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A6503DA26C306CC00059F9B /* Person.swift in Sources */,
+				8A6503E226C3AFC100059F9B /* DetailContact.swift in Sources */,
+				8A6503DC26C3078E00059F9B /* DataManager.swift in Sources */,
+				8A6503E826C40F2200059F9B /* PhoneMailCell.swift in Sources */,
+				8A6503E026C3083D00059F9B /* Numbers.swift in Sources */,
 				8A6503CD26C3069100059F9B /* ContentView.swift in Sources */,
 				8A6503CB26C3069100059F9B /* ContactsSwiftUIApp.swift in Sources */,
+				8A6503DE26C3083200059F9B /* Contacts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,10 +324,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"ContactsSwiftUI/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"ContactsSwiftUI/SupportFiles/Preview Content\"";
 				DEVELOPMENT_TEAM = 4A5GSXMSS8;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = ContactsSwiftUI/Info.plist;
+				INFOPLIST_FILE = ContactsSwiftUI/SupportFiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -290,10 +346,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"ContactsSwiftUI/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"ContactsSwiftUI/SupportFiles/Preview Content\"";
 				DEVELOPMENT_TEAM = 4A5GSXMSS8;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = ContactsSwiftUI/Info.plist;
+				INFOPLIST_FILE = ContactsSwiftUI/SupportFiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
